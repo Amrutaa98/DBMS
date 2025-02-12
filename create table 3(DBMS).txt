@@ -1,0 +1,13 @@
+create table course(cname varchar(15) primary key,meetsat varchar(8),room varchar(5),fid int,foreign key(fid) references faculty (fid) on delete cascade);
+insert into course values('DBMS','9:00','UT03',141);
+insert into course values('DCCN','10:00','UT03',142);
+insert into course values('PPS','11:00','UT03',143);
+insert into course values('PYTHON','1:00','LF01',144);
+insert into course values('OS','3:00','UT03',145);
+select * from course;
+
+
+
+
+
+

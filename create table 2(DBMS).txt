@@ -1,0 +1,6 @@
+CREATE TABLE faculty (fid INT PRIMARY KEY AUTO_INCREMENT,fname VARCHAR(20) NOT NULL,address VARCHAR(50),deptid INT);
+insert into faculty values('141','deepthi','banglore',101);
+insert into faculty values('142','saira banu','banglore',102);
+insert into faculty values('143','harsha','banglore',103);
+insert into faculty values('144','yogitha','banglore',104);
+insert into faculty values('145','himanshu','banglore',105);
