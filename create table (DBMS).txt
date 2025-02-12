@@ -1,0 +1,12 @@
+create database university;  
+SHOW databases;
+USE university;
+create table student(rollno varchar(20),name char(15),sem int);
+desc student;
+insert into student values('20231ISE0157','amruta',4);
+insert into student values('20231ISE0162','bhargavi',4);
+insert into student values('20231ISE0138','kumuda',4);
+insert into student values('20231ISE0141','prakurthi',4);
+insert into student values('20231ISE0109','anwayi',4);
+show tables;
+select * from student;
