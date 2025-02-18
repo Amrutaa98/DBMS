@@ -1,0 +1,10 @@
+/*count the number of the students in each major*/
+ select major,count(*) as total_student from student group by major;  
+ /*count the total number of the students*/
+ select count(snum) from student;
+ /*who are noy enrolled in any course*/
+ select s.snum,s.sname from student s left join enroll e on s.snum=e.snum where e.snum is null;
+ /*faculty members who are assigned to any course*/
+ select f.fid , f.fname from faculty f left join course c on f.fid=c.fid where c.fid is null;
+ /*students enrolled in one or more then one course*/
+ select snum from enroll group by snum having count(cname)>1;
