@@ -1,0 +1,6 @@
+CREATE TABLE enroll(snum VARCHAR(15),cname VARCHAR(10),PRIMARY KEY(snum, cname),FOREIGN KEY(snum) REFERENCES student(snum),FOREIGN KEY(cname) REFERENCES course(cname) ON DELETE CASCADE);
+INSERT INTO enroll values('20231ISE0157','dbms'); 
+INSERT INTO enroll values('20231ISE0162','pps');
+INSERT INTO enroll values('20231ISE0138','PYTHON');
+INSERT INTO enroll values('20231ISE0141','OS');
+
