@@ -1,0 +1,10 @@
+create database bank;
+use bank;
+show databases;
+create table branch(branch_name varchar(20) primary key,branch_city varchar(20),asset float);
+insert into branch values('xyz','gdg',101.10);
+insert into branch values('abc','bnglr',102.10);
+insert into branch values('efg','kuk',103.10);
+insert into branch values('hig','haveri',104.10);
+insert into branch values('klm','dbpur',105.10);
+show tables;
