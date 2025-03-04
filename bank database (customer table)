@@ -1,0 +1,7 @@
+create table customer(customer_name varchar(20) primary key,customer_street varchar(30),customer_city varchar(20));
+insert into customer values('prakruthi','aruu','dbpur');
+insert into customer values('bhargu','presi','kpur');
+insert into customer values('kumuda','koli','mysore');
+insert into customer values('ammu','sai','gdg');
+insert into customer values('anwayi','cityyy','ckikman');
+show tables;
