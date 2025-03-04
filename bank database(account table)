@@ -1,0 +1,8 @@
+create table account(account_number int primary key,branch_name varchar(20),balance float);
+insert into account values(12345,'xyz',20000);
+insert into account values(23456,'abc',30000);
+insert into account values(34567,'efg',80000);
+insert into account values(45678,'hig',2000);
+insert into account values(56789,'klm',55000);
+show tables;
+
