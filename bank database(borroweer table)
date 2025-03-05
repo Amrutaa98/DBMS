@@ -1,0 +1,9 @@
+create table borrower(customer_name varchar(20),loan_number int,primary key(customer_name,loan_number),foreign key (customer_name) references customer(customer_name) on delete cascade,foreign key(loan_number) references loan (loan_number) on delete cascade);
+insert into borrower values('prakruthi',1);
+insert into borrower values('bhargu',2);
+insert into borrower values('kumuda',3);
+insert into borrower values('ammu',4);
+insert into borrower values('anwayi',5);
+show tables;
+select * from borrower;
+
