@@ -1,0 +1,7 @@
+create table depositor(customer_name varchar(20),account_number int,primary key(customer_name,account_number), foreign key(customer_name) references customer(customer_name) on delete cascade,foreign key(account_number) references account(account_number) on delete cascade);
+insert into depositor value('prakruthi',12345);
+insert into depositor value('bhargu',23456);
+insert into depositor value('kumuda',34567);
+insert into depositor value('ammu',45678);
+insert into depositor value('anwayi',56789);
+show table
