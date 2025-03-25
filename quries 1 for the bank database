@@ -1,0 +1,34 @@
+select * from branch order by branch_name,asset desc;
+ 
+ select avg(a.balance)
+ from account a,branch b
+ where b.branch_name='efg';
+ 
+ select count(b.branch_name)
+ from branch b,loan l
+ where b.branch_name=l.branch_name;
+ 
+ select count(b.branch_name)
+ from branch b,loan l
+ where b.branch_name!=l.branch_name;
+ 
+ select branch_name
+ from branch 
+ where branch_city='bnglr';
+ 
+ select  count(account_number) as no_of_accounts ,branch_name
+ from  account a
+ group by  branch_name;
+ 
+ select sum(balance)
+ from account 
+ group by branch_name;
+ 
+ 
+ select branch_name,sum(amount)
+ from loan 
+ group by branch_name;
+ 
+ select customer_city
+ from customer 
+ where account_number=12345;
